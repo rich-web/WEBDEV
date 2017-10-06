@@ -1,4 +1,3 @@
-
 # WEBDEV
 <h1>Main folder for web development examples</h1><br>
 <h2>Folders:</h2><br>
@@ -11,5 +10,3 @@
 <a href="">Navigation_Bar</a><br>
 <a href="">Positioning</a><br>
 <a href="">Transition</a>
-
-This site was built using [GitHub Pages](https://pages.github.com/).
