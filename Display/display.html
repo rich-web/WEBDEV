@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display</title>
+    <style>
+        .floating-box {
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: 3px solid #73AD21;  
+        }
+
+        .after-box {
+            border: 3px solid red;
+            color:black; 
+        }
+        .change{
+            display: block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+<body>
+    <p style="display:block; background-color:red; color:black">Display Block</p><br><br>    
+    <p style="display:inline; background-color:red; color:black">Display Inline</p><br><br>
+    <div class="floating-box" id="p">Floating box</div>
+    <div class="floating-box" id="q">Floating box</div>
+    <div class="floating-box" id="r">Floating box</div>
+    <p id="z" class="after-box">The above box's have display inline-block</p>
+    <button id="button" onclick="myFunction()">Click to see box's without display set to inline-block</button>
+
+   <br><br><p style="background-color:red; color:black">Display <span style="color:yellow;background-color:black">Span</span></p>
+   
+   <script>
+       function myFunction(){
+        var x = document.getElementById("p");
+        var b = document.getElementById("button");
+        var z = document.getElementById("z");
+        if(x.className === "floating-box"){
+            document.getElementById("p").setAttribute("class", "change");
+            b.innerHTML="Change display back to inline-block";
+            z.innerHTML="The above box's <mark>NOW</mark> have display block";
+        }else{
+            x.className = "floating-box";
+            b.innerHTML="Click to see box's without display set to inline-block";
+            z.innerHTML="The above box's have display inline-block";
+            }
+
+        var x = document.getElementById("q");
+        if(x.className === "floating-box"){
+            document.getElementById("q").setAttribute("class", "change");
+        }else{x.className = "floating-box";}
+
+        var x = document.getElementById("r");
+        if(x.className === "floating-box"){
+            document.getElementById("r").setAttribute("class", "change");
+        }else{x.className = "floating-box";}
+       }
+   </script>
+</body>
+</html>
