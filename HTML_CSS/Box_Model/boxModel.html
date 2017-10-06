@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="boxModel.css">
+    <title>Box Model</title>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="floatRight"><a href="#signin">Sign In</a></li>
+        <li class="floatRight"><a href="#signup">Sign Up</a></li>
+    </ul>
+    <header>
+        <h1 id="boxModel1">Box Model 1</h1>
+        <h1 id="boxModel2">Box Model 2</h1>
+        <button id="button" class="button" onclick="myFunction()">Try it</button>
+    </header>
+    <div id="boxModel1Text"></div>
+    <div id="boxModel2Text"></div><br>
+    <div id="buttonContentText"></div><br>
+    <div id="buttonText"></div><br><br>
+        
+    <script>
+    function myFunction() {
+        var elmnt1 = document.getElementById("boxModel1");
+        var bmtxt1 = "Box Model 1:<br> Height of content: " + elmnt1.clientHeight + "px<br>";
+        bmtxt1 += "Width of content: " + elmnt1.clientWidth + "px<br>";
+
+        var elmnt2 = document.getElementById("boxModel2");
+        var bmtxt2 = "Box Model 2:<br> Height of content plus the height of border: " + elmnt2.offsetHeight + "px<br>";
+        bmtxt2 += "Width of content plus the width of border: " + elmnt2.offsetWidth + "px";
+
+        var elmntButtonContent = document.getElementById("button");
+        var buttonContent = "Button Content:<br> Height of content: " + elmntButtonContent.clientHeight + "px<br>";
+        buttonContent += "Width of content: " + elmntButtonContent.clientWidth + "px<br>";
+
+        var elmntButton = document.getElementById("button");
+        var button = "Button:<br> Height of content plus the height of border: " + elmntButton.offsetHeight + "px<br>";
+        button += "Width of content plus the width of border: " + elmntButton.offsetWidth + "px<br>";
+
+        document.getElementById("boxModel1Text").innerHTML = bmtxt1 + "<br>";
+        document.getElementById("boxModel2Text").innerHTML = bmtxt2 + "<br>";
+        document.getElementById("buttonContentText").innerHTML = buttonContent;
+        document.getElementById("buttonText").innerHTML = button;
+    }
+    </script>
+</body>
+</html>
