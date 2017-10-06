@@ -8,7 +8,7 @@
 :link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Box_Model" target="_top">Box_Model</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/zERvrG" target="_top">codepen example</a><br>
 
 
-:link:<a href="">Display</a><br>
+:link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Display">Display</a><br>
 
 :link:<a href="">Max-Width</a><br>
 
