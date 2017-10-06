@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="static.css">
+    <title>Position Static</title>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="floatRight"><a href="#signin">Sign In</a></li>
+        <li class="floatRight"><a href="#signup">Sign Up</a></li>
+    </ul>
+    <header><h1 id="change">POSITION STATIC</h1></header>
+    <div>
+        <p>HTML elements are positioned static by default</p>
+        <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+        <p>The above title 'POSITION STATIC' spans the width of the entire screen because the H1 element has a default display set to block.</p>
+        <p> Click the button below to see</p>
+        <button class="button" onclick="myFunction()">Click</button>
+        <br><br><p>If you apply a 'margin-top:50px' to the H1 element it will move the entire page down by 50px. Click the button below to see</p>
+        <button class="button" onclick="myFunction1()">Click</button>
+        <br><br><p>If you apply a 'float' to the H1 element then the element no longer spans the entire length and then any applied margin will act as normal</p>
+        <button class="button" onclick="myFunction2()">Click</button>
+        <p id="type" style="color:black;font-size: 20px;display:inline-block"></p>
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("change").style.backgroundColor="red";
+            var bc = document.getElementById("change").style.backgroundColor;
+            console.log(bc);
+        }
+        function myFunction1(){
+            document.getElementById("change").style.marginTop="50px";
+        }
+        function myFunction2(){
+            document.getElementById("change").style.cssFloat="right";
+            document.getElementById("change").style.backgroundColor="red";
+            document.getElementById("change").style.marginTop="50px";
+            //Output style type
+            var float = document.getElementById("change").style.cssFloat;
+            var bc = document.getElementById("change").style.backgroundColor;
+            var mt = document.getElementById("change").style.marginTop;
+            document.getElementById("type").innerHTML =
+            "<mark>" +
+            "Float is set to: " + float +
+            ", background colour is set to: " + bc +
+            ", marging top is set to: " + mt +
+            "</mark>";
+            console.log(float, bc, mt);
+        }
+        
+    </script>    
+</body>
+</html>
