@@ -1,0 +1,88 @@
+/* header{
+	height:185px;
+	background-image: url('fallingLeavesLoop.jpg');
+	background-size: cover;
+	background-repeat: repeat-y;
+	animation:snowScroll 5s linear infinite;
+}
+@keyframes snowScroll{
+	from{background-position: 0px 185px;}
+	to{background-position: 0 440px;}
+} */
+header{
+	height:185px;
+	background-image: url('snowloop.jpg');
+	background-size: cover;
+	background-repeat: repeat-y;
+	animation:snowScroll 10s linear infinite;
+}
+@keyframes snowScroll{
+	from{background-position: 0px 185px;}
+	to{background-position: 0 1010px;}
+}
+
+
+@media all and (max-width: 1000px){
+	#container{
+		width:100%;
+		left: 0;
+		margin-left: 0;
+	}
+}
+@media all and (min-width: 100px) and (max-width: 350px){
+	header{
+		height:185px;
+		/* background-image: url('fallingLeavesLoop.jpg'); */
+		background-image: url('snowloop.jpg');
+		background-size: cover;
+		background-repeat: repeat-y;
+		animation:snowScroll 5s linear infinite;
+}
+	@keyframes snowScroll{
+		from{background-position: 0 0;}
+		to{background-position: 0 400px;}
+}
+
+	
+    
+	footer{
+		top:2800px;
+		/* background-image: url('fallingLeavesLoop.jpg'); */
+		background-image: url('snowloop.jpg');
+		background-size: cover;
+		background-repeat: repeat-y;
+		animation:snowScroll 5s linear infinite;
+	}
+	@keyframes snowScroll{
+		from{background-position: 0 0;}
+		to{background-position: 0 400px;}
+	}
+}
+@media all and (min-width: 100px) and (max-width: 600px) and (orientation: landscape){
+	
+    header{
+    	position: relative;
+    	height: 50px;
+    	margin: 0;
+		background-image: url('fallingLeavesLoop.jpg');
+		background-size: cover;
+		background-repeat: repeat-y;
+		animation:snowScroll 5s linear infinite;
+	}
+	@keyframes snowScroll{
+		from{background-position: 0 0;}
+		to{background-position: 0 400px;}
+	}
+	
+	footer{
+		top:1500px;
+		background-image: url('fallingLeavesLoop.jpg');
+		background-size: cover;
+		background-repeat: repeat-y;
+		animation:snowScroll 5s linear infinite;
+	}
+	@keyframes snowScroll{
+		from{background-position: 0 0;}
+		to{background-position: 0 400px;}
+	}
+}
