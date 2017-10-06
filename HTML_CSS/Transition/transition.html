@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="transition.css">
+        <title>Transition</title>
+    </head>
+
+    <body onresize="myFunction()">
+        <ul id="navBarI" class="navBar">
+            <li target="_blank"><a class="active" href="#home">Home</a></li>
+            <li target="_blank"><a href="#about">About</a></li>
+            <li target="_blank"><a href="#contact">Contact</a></li>
+            <li target="_blank" class="floatRight" id="signin" onclick="transitionFunction()">
+                <a href="#signin" class="u" id="j">Sign In</a>
+            </li>
+            <li target="_blank" class="floatRight"><a href="#signup">Sign Up</a></li>
+            <li>
+                <a href="javascript:void(0);"
+                    class="icon" onclick="navFunction()"
+                    style="font-size:15px">&#9776;</a>
+            </li>
+        </ul>
+
+        <script>
+            function myFunction(){
+                var w = window.innerWidth;
+                var p = Number(600);
+                console.log(w);
+                var y = document.getElementsByClassName("t");
+                if(w<p){
+                    document.getElementById("j").innerHTML="Sign In";
+                    document.getElementById("signin").style.width="";
+                    document.getElementById("j").style.width="";
+                }
+
+            }
+            function navFunction(){
+                var x = document.getElementById("navBarI");
+                if(x.className === "navBar"){
+                    x.className += " responsive";
+                }else{
+                    x.className = "navBar";
+                }
+            }
+
+            function transitionFunction(){
+                var x = document.getElementById("signin");
+                var y = document.getElementById("j");
+                
+                if (y.className === "u"){
+                    console.log("is u");
+                    document.getElementById("signin").style.width="550px";
+                    
+                    document.getElementById("j").style.width="550px";
+                    document.getElementById("j").innerHTML="<span style='background-color:green;'>&#9747;</span><form style='float:right;padding:0px 5px 0px 5px'>username: <input>  password: <input></form>";
+                    y.setAttribute("class", "t");
+                }else{
+                    console.log("not u");
+                    document.getElementById("j").innerHTML="Sign In";
+                    document.getElementById("signin").style.width="";
+                    document.getElementById("j").style.width="";
+                    y.setAttribute("class", "u");
+
+                }
+            }
+        </script>    
+    </body>
+</html>
