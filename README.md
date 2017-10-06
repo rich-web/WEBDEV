@@ -16,4 +16,5 @@
 
 :link:<a href="">Positioning</a><br>
 
-:link:<a href="">Transition</a>
+:link:<a href="">Transition</a><br>
+https://www.webpagefx.com/tools/emoji-cheat-sheet/
