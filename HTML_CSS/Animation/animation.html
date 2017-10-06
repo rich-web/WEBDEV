@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="animation3.css">
+    <title>Animation3</title>
+</head>
+    <body>
+        <ul id="navBarI" class="navBar">
+            <li target="_blank"><a class="active" href="#home">Home</a></li>
+            <li target="_blank"><a href="#about">About</a></li>
+            <li target="_blank"><a href="#contact">Contact</a></li>
+            <li target="_blank" class="floatRight"><a href="#signin">Sign In</a></li>
+            <li target="_blank" class="floatRight"><a href="#signup">Sign Up</a></li>
+            <li>
+                <a href="javascript:void(0);"
+                    class="icon" onclick="navFunction()"
+                    style="font-size:15px">&#9776;</a>
+            </li>
+        </ul>
+        <header>
+            <div id="title">
+                <h1>Your Mobile Home Solutions</h1>
+            </div>
+        </header>
+
+        <div id="SU3ES">
+            <div id="h2container">
+                <h2>Sign Up In 3 Easy Steps</h2>
+            </div>
+        </div>
+        <div id="container">
+            <div id="box1">
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="90" stroke="green" stroke-width="4" fill="white">
+                        <!-- <text x="1" y="1" fill="red">1</text> -->
+                    </circle>
+                </svg>
+            </div>           
+            <div id="boxNum1">1</div>
+
+            <div id="box2">
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="90" stroke="green" stroke-width="4" fill="white">
+                    </circle>
+                </svg>
+            </div>            
+            <div id="boxNum2">2</div>
+            
+            <div id="box3">
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="90" stroke="green" stroke-width="4" fill="white">
+                    </circle>                
+                </svg>
+            </div>            
+            <div id="boxNum3">3</div>
+        </div>
+        
+        <script>
+            function navFunction(){
+                var x = document.getElementById("navBarI");
+                if(x.className === "navBar"){
+                    x.className += " responsive";
+                }else{
+                    x.className = "navBar";
+                }
+            }
+
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                var x = innerWidth;
+                var y = 600;
+              if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                if(x>y){
+                    // var check = document.getElementById("box1");
+                    // console.log(check);
+                    // console.log (x);
+                    // console.log (y);
+                    
+                    document.getElementById("box1").className = "animation";
+                    document.getElementById("boxNum1").className = "animation";
+
+                    document.getElementById("box2").className = "animation";
+                    document.getElementById("boxNum2").className = "animation";
+
+                    document.getElementById("box3").className = "animation";
+                    document.getElementById("boxNum3").className = "animation";
+                }
+                // else{
+                //     console.log("window is smaller than 600px so animation is not applied")
+                // }
+
+              }
+            }
+        
+        </script>    
+    </body>
+</html>
