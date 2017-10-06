@@ -10,7 +10,7 @@
 
 :link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Display">Display</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/VMQjBy">codepen example</a><br>
 
-:link:<a href="">Max-Width</a><br>
+:link:<a style="display:inline" href="">Max-Width</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/NayRVb">codepen example</a><br>
 
 :link:<a href="">Navigation_Bar</a><br>
 
