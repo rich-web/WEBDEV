@@ -12,9 +12,9 @@
 
 :link:<a style="display:inline" href="">Max-Width</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/NayRVb">codepen example</a><br>
 
-:link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Navigation_Bar">Navigation_Bar</a>&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/yzvVaK">codepen example</a><br>
+:link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Navigation_Bar">Navigation_Bar</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/yzvVaK">codepen example</a><br>
 
-:link:<a style="display:inline" href="">Positioning</a><br>
+:link:<a style="display:inline" href="https://github.com/rich-web/WEBDEV/tree/master/HTML_CSS/Positioning">Positioning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="display:inline" href="https://codepen.io/rich_web/pen/KXQNGB">codepen example</a><br>
 
 :link:<a href="">Transition</a><br>
 https://www.webpagefx.com/tools/emoji-cheat-sheet/
